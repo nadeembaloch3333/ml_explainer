@@ -61,7 +61,7 @@ python -m pytest
 ```
 
 ## Project Structure
-   ![Project Structure](project_structure.png)
+   ![Project Structure](project_structure.PNG)
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
