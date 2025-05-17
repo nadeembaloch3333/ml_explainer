@@ -61,31 +61,7 @@ python -m pytest
 ```
 
 ## Project Structure
-\\\
-ML_EXPLAINER/
-├── .pytest_cache/
-├── .venv/
-├── examples/
-│ ├── boston_housing.ipynb
-│ ├── example_notebook.ipynb
-│ └── wine_example.ipynb
-├── ml_explainer/
-│ ├── pycache/
-│ ├── init.py
-│ ├── base_explainer.py
-│ ├── factory.py
-│ ├── lime_explainer.py
-│ ├── shap_explainer.py
-│ └── utils.py
-├── tests/
-│ ├── pycache/
-│ └── test_explainer.py
-├── LICENSE
-├── README.md
-└── requirements.txt
-\\\
-
-
+   ![Project Structure](project_structure.png)
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
