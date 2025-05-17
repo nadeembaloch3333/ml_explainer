@@ -17,7 +17,47 @@ Install dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
+## API Reference
 
+### ExplainerFactory
+
+- `ExplainerFactory.get_explainer(model, method="shap", training_data=None, mode="classification")`
+  - **model**: Trained machine learning model (e.g., scikit-learn estimator)
+  - **method**: `"shap"` or `"lime"` (default: `"shap"`)
+  - **training_data**: (Required for LIME) The data used to fit the explainer (e.g., a pandas DataFrame)
+  - **mode**: `"classification"` or `"regression"` (for LIME, default: `"classification"`)
+  - **Returns**: An explainer object (`SHAPExplainer` or `LIMEExplainer`)
+
+---
+
+### SHAPExplainer
+
+- `explain(input_data)`
+  - **input_data**: Data to explain (e.g., a pandas DataFrame or numpy array)
+  - **Returns**: SHAP Explanation object
+
+- `visualize(input_data, class_idx=0)`
+  - **input_data**: Data to explain (single sample)
+  - **class_idx**: (Optional, default: 0) For multi-class models, which class to visualize
+  - **Displays**: SHAP waterfall plot for the specified sample and class
+
+---
+
+### LIMEExplainer
+
+- `explain(input_data, sample_idx=0)`
+  - **input_data**: Data to explain (e.g., a pandas DataFrame)
+  - **sample_idx**: (Optional, default: 0) Index of the sample to explain
+  - **Returns**: LIME Explanation object
+
+- `visualize(input_data, sample_idx=0)`
+  - **input_data**: Data to explain (e.g., a pandas DataFrame)
+  - **sample_idx**: (Optional, default: 0) Index of the sample to visualize
+  - **Displays**: LIME explanation visualization in the notebook
+
+---
+
+**All classes and methods include Python docstrings for more details.**
 ## Usage Example
 
 ### SHAP Example
@@ -61,7 +101,7 @@ python -m pytest
 ```
 
 ## Project Structure
-   ![Project Structure](project_structure.PNG)
+![Project Structure](project_structure.PNG)
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
