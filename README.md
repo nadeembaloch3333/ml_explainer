@@ -61,7 +61,7 @@ python -m pytest
 ```
 
 ## Project Structure
-'''
+\\\
 ML_EXPLAINER/
 ├── .pytest_cache/
 ├── .venv/
@@ -83,7 +83,7 @@ ML_EXPLAINER/
 ├── LICENSE
 ├── README.md
 └── requirements.txt
-'''
+\\\
 
 
 ## Contributing
