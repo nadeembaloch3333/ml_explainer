@@ -61,21 +61,28 @@ python -m pytest
 ```
 
 ## Project Structure
-ml_explainer/
-init.py
-base_explainer.py
-shap_explainer.py
-lime_explainer.py
-factory.py
-utils.py
-examples/
-example_notebook.ipynb
-wine_example.ipynb
-boston_housing.ipynb
-tests/
-test_explainer.py
-requirements.txt
-README.md
+ML_EXPLAINER/
+├── .pytest_cache/
+├── .venv/
+├── examples/
+│   ├── boston_housing.ipynb
+│   ├── example_notebook.ipynb
+│   └── wine_example.ipynb
+├── ml_explainer/
+│   ├── __pycache__/
+│   ├── __init__.py
+│   ├── base_explainer.py
+│   ├── factory.py
+│   ├── lime_explainer.py
+│   ├── shap_explainer.py
+│   └── utils.py
+├── tests/
+│   ├── __pycache__/
+│   └── test_explainer.py
+├── LICENSE
+├── README.md
+└── requirements.txt
+
 
 
 ## Contributing
